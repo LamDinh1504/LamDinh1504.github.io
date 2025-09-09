@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Cá Nhân - Lâm Đình Vũ</title>
+    <style>
+        body {
+            background: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .cv-container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+            overflow: hidden;
+            animation: fadeIn 1.2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(40px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+        .cv-header {
+            background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+            color: #fff;
+            padding: 36px 32px 24px 32px;
+            text-align: center;
+        }
+        .cv-header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            margin-bottom: 16px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .cv-header img:hover {
+            transform: scale(1.08) rotate(-2deg);
+        }
+        .cv-header h1 {
+            margin: 0;
+            font-size: 2.4rem;
+            letter-spacing: 1px;
+        }
+        .cv-header p {
+            margin: 8px 0 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        .cv-content {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 32px;
+        }
+        .cv-left, .cv-right {
+            flex: 1 1 300px;
+            min-width: 250px;
+            margin-bottom: 24px;
+        }
+        .cv-section {
+            margin-bottom: 28px;
+        }
+        .cv-section h2 {
+            font-size: 1.2rem;
+            color: #185a9d;
+            margin-bottom: 12px;
+            border-left: 4px solid #43cea2;
+            padding-left: 10px;
+            letter-spacing: 1px;
+        }
+        .cv-section ul {
+            padding-left: 18px;
+            margin: 0;
+        }
+        .cv-skill-bar {
+            background: #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+        .cv-skill-bar span {
+            display: block;
+            height: 18px;
+            background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+            color: #fff;
+            text-align: right;
+            padding-right: 8px;
+            font-size: 0.95rem;
+            line-height: 18px;
+            border-radius: 8px;
+            animation: growBar 1.2s;
+        }
+        @keyframes growBar {
+            from { width: 0; }
+            to { width: var(--bar-width); }
+        }
+        .cv-contact a {
+            color: #185a9d;
+            text-decoration: none;
+            margin-right: 12px;
+            transition: color 0.2s;
+        }
+        .cv-contact a:hover {
+            color: #43cea2;
+        }
+        @media (max-width: 700px) {
+            .cv-content {
+                flex-direction: column;
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <div class="cv-header">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Ảnh đại diện">
+            <h1>Lâm Đình Vũ</h1>
+            <p>Web Developer | UI/UX Enthusiast</p>
+            <div class="cv-contact">
+                <a href="mailto:lamdv@email.com">lamdv@email.com</a>
+                <a href="tel:0123456789">0123 456 789</a>
+                <a href="https://github.com/lamdv" target="_blank">GitHub</a>
+            </div>
+        </div>
+        <div class="cv-content">
+            <div class="cv-left">
+                <div class="cv-section">
+                    <h2>Kỹ năng</h2>
+                    <div class="cv-skill-bar" style="--bar-width: 90%;">
+                        <span style="width:90%;">HTML/CSS</span>
+                    </div>
+                    <div class="cv-skill-bar" style="--bar-width: 80%;">
+                        <span style="width:80%;">JavaScript</span>
+                    </div>
+                    <div class="cv-skill-bar" style="--bar-width: 75%;">
+                        <span style="width:75%;">ReactJS</span>
+                    </div>
+                    <div class="cv-skill-bar" style="--bar-width: 70%;">
+                        <span style="width:70%;">NodeJS</span>
+                    </div>
+                </div>
+                <div class="cv-section">
+                    <h2>Chứng chỉ</h2>
+                    <ul>
+                        <li>Chứng chỉ Lập trình Web - FUNiX</li>
+                        <li>IELTS 6.5</li>
+                    </ul>
+                </div>
+                <div class="cv-section">
+                    <h2>Sở thích</h2>
+                    <ul>
+                        <li>Thiết kế giao diện</li>
+                        <li>Chụp ảnh</li>
+                        <li>Đọc sách</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cv-right">
+                <div class="cv-section">
+                    <h2>Giới thiệu</h2>
+                    <p>Tôi là một lập trình viên web đam mê sáng tạo, yêu thích UI/UX và luôn học hỏi công nghệ mới. Tôi mong muốn được làm việc trong môi trường năng động để phát triển bản thân.</p>
+                </div>
+                <div class="cv-section">
+                    <h2>Kinh nghiệm</h2>
+                    <ul>
+                        <li><b>Web Developer</b> - Công ty ABC (2023 - nay)
+                            <ul>
+                                <li>Phát triển giao diện web cho khách hàng doanh nghiệp</li>
+                                <li>Tối ưu hiệu suất và trải nghiệm người dùng</li>
+                            </ul>
+                        </li>
+                        <li><b>Thực tập sinh Frontend</b> - Công ty XYZ (2022)
+                            <ul>
+                                <li>Tham gia xây dựng website landing page</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cv-section">
+                    <h2>Học vấn</h2>
+                    <ul>
+                        <li>Đại học Công nghệ Thông tin - ĐHQG TP.HCM (2020 - 2024)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
